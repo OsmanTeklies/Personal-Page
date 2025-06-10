@@ -1,0 +1,19 @@
+* {
+    max-width: 800px;   
+    margin-left: auto;  
+    margin-right: auto; 
+    box-sizing: border-box; 
+}
+
+table, th, td{
+    border: 2px  solid black
+}
+
+nav{
+    border: 2px  solid black
+}
+
+#namePlate{
+    text-align: center
+}
+
