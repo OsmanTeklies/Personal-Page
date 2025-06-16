@@ -5,15 +5,49 @@
     box-sizing: border-box; 
 }
 
+body {
+    background-color: lightcyan
+  }
+
 table, th, td{
-    border: 2px  solid black
+    border: 2px  solid black;
+    padding: 4px;
 }
 
 nav{
-    border: 2px  solid black
+    border: 2px  solid black;
+    border-radius: 20px;
+    width: 600px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-inline-start: 10px;
 }
 
 #namePlate{
-    text-align: center
+    text-align: center;
 }
 
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between; /* optional: adjust alignment */
+    flex-wrap: wrap; /* optional: wraps on smaller screens */
+}
+
+#Testimonials blockquote {
+    border: 1px dotted black;
+    width: 250px;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    padding-inline-start: 5px;
+}
+
+
+
+#selfPic {
+    display: flex;
+    flex-direction: row-reverse;
+}
