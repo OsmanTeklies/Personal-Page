@@ -4,63 +4,56 @@
         <meta charset="UTF-8">
         <title>This Week's spotlight on...Osman Teklies</title>
         <link href="./index.css" rel="stylesheet">
+        <script src="script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     </head>
     <body>
      
         <main>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#CareerHighlights">Career Highlights</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Testimonials">Testimonials</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </nav>
+
             <h1><i>This Week's spotlight on...</i><br></h1> 
             <section id="namePlate">
             <h2>
             OSMAN TEKLIES
             </h2>
-            <!--
-            <p>
-                Techie | History Buff | Calisthenic Expert
-            </p>
-            -->
             </section>
 
-            <nav>
-                <ul>
-                    <li><a href="#About Me">About Me</a></li>
-                    <li><a href="#Career Highlights">Career Highlights</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Testimonials">Testimonials</a></li>
-                    <li><a href="#Contact Me">Contact Me</a></li>
-                </ul>
-            </nav>
+        </header>
+
+         
 
 
-            <section id="About Me">
+            <section id="AboutMe">
                 <h2>About Me</h2>
                 <div id="selfPic">
                     <img src="https://i.imgur.com/tENOU03.jpeg" referrerpolicy="no-referrer" alt="Photo of Osman Teklies" width="500" height="300"/>
                 <p>
-                    Hi! My name is Osman and I am excited to be joining the La Fosse Academy to kickstart my career in tech. 
+                Hi! My name is Osman and I am excited to be joining the La Fosse Academy to kickstart my career in tech. My journey has been shaped by a background in science, student union politics and experience in the education sector. I’m also passionate about history, language, and calisthenics — interests that keep me curious, grounded, and always learning.
                 <br>
-                <br>
-                Journey in 3 words?
-                <br>
-                Science, Student advocacy, Education
-                <br>
-                <br>        
-                Special interests?
-                <br>
-                History, Language, Calisthenics
-                <br>
-                <br>
-                Favourite quote?
                 <br>
                 <em>“Knowledge is attained through the passage of days and nights”</em>
+                <br>
+                <br>
+                This quote reminds me that mastery comes through patience, persistence, and a willingness to learn over time. I look forward to applying these qualities throughout my journey at La Fosse.
                 </p>
                 </div>
             </section>
 
-            <section id=" Career Highlights">
+            <section id="CareerHighlights">
                 <h2>Career Highlights (so far!)</h2>
                 <ol reversed>
                     <li>Starting at La Fosse.... [2025+]</li>
@@ -78,6 +71,7 @@
                     <li>Project Management</li>
                     <li>Data Analysis & Reports</li>
                     <li>Communication</li>
+                    <li>Research</li>
                     <li>Tools: Javascript, Python, Figma</li>
                 </ul>
 
@@ -90,23 +84,27 @@
                        <tr>
                         <th>Project</th>
                         <th>Description</th>
+                        <th>Learnings</th>
                         <th>Tools</th>
                        </tr>     
                     </thread>
                     <tbody>
                         <tr>
                             <td>Computational Chemistry</td>
-                            <td>Simulated gas reaction in various conditions & visualised the data</td>
+                            <td>Simulated chemical reactions in various conditions</td>
+                            <td>Learned to clean, process, and visualise experimental data</td>
                             <td>Python, Jupyter Notebook</td>
                         </tr>
                         <tr>
                             <td>Website Revamp</td>
                             <td>Designed wireframes for home, product and membership pages</td>
+                            <td>Iterating on designs based on client feedback and improving collaboration skills.</td>
                             <td>Figma</td>
                         </tr>
                         <tr>
                             <td>Blog Page</td>
-                            <td>Simple movie ranking blog with interactive star rating system</td>
+                            <td>Created simple movie ranking blog</td>
+                            <td>Learned DOM manipulation and improved JavaScript skills through interactivity.</td>
                             <td>HTML, CSS, Javascript</td>
                         </tr>
                     </tbody>
@@ -117,8 +115,13 @@
 
             </section>
 
+
+            
+
             <section id="Testimonials">
                 <h2>Testimonials</h2>
+
+                <!--
                 <div class="testimonial-container">
                 <blockquote>
                     <p>"<i><strong>I love Osman's vibe</strong></i>" - Anonymous</p> 
@@ -130,23 +133,81 @@
                     <p>"<i><strong>Woof?</strong></i>" - Local dog</p>
                 </blockquote>
                 </div>
+
+                -->
+                <div class="slideshow-container">
+
+                    <!-- quote slides -->
+                    <div class="mySlides">
+                      <q>I love Osman's vibe</q>
+                      <p class="author">- Anonymous</p>
+                    </div>
+                  
+                    <div class="mySlides">
+                      <q>He's just the best</q>
+                      <p class="author">- Osman's Mum</p>
+                    </div>
+                  
+                    <div class="mySlides">
+                      <q>Woof?</q>
+                      <p class="author">- Local dog</p>
+                    </div>
+                  
+                    <!-- buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  
+                </div>
+
+                  <!-- Dots-->
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </section>
 
+        </main>
 
+        <footer>
 
-            <section id="Contact Me">
+            <section id="ContactMe">
                 <h2>Contact Me</h2>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/osman-teklies-7b2567127">LinkedIn</a></li>
-                    <li><a href="https://www.facebook.com/osman.teklies">Facebook</a></li>
-                    <li><a href="https://github.com/OsmanTeklies">Github</a></li>
+                    <li>
+                    <a href="https://www.linkedin.com/in/osman-teklies-7b2567127" target="_blank">
+                        <img src="./images/LinkedIn_icon.svg.png" alt="LinkedIn icon"> LinkedIn
+                    </a>
+                    </li>
+                    <li><a href="https://www.facebook.com/osman.teklies" target="_blank">
+                        <img src="images/Facebook_f_logo_(2021).svg.png" alt="Facebook icon"> Facebook
+                    </a></li>
+                    <li><a href="https://github.com/OsmanTeklies" target="_blank">
+                        <img src="./images/github logo.png" alt="Github logo"> Github
+                    </a></li>
                 </ul>
+
+                <form action="/subscribe" method="POST">
+                    <label for="email">Subscribe to our newsletter:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                  </form>
+                  
             </section>
+
+        </footer>
         
 
 
 
 
-        </main>
     </body>
+
+
+
+
+    
+
+
 </html>
