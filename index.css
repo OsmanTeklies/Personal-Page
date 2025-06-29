@@ -9,6 +9,10 @@ body {
     background-color:lightcyan;
 }
 
+#namePlate h2{
+    text-align: center;
+    text-decoration: none;
+}
 
 table {
     background: #f1f1f1f1;
@@ -29,6 +33,10 @@ th {
 
 h1, h2 {
     font-family: 'Inter', sans-serif
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 p ,ul, ol, form {
@@ -54,9 +62,7 @@ nav a {
 }
 
 
-#namePlate{
-    text-align: center;
-}
+
 
 #AboutMe img {
     width: 250px;
@@ -72,6 +78,10 @@ nav a {
 
 #Skills li {
     margin-left: 50px;
+}
+
+footer h2 {
+    text-decoration: none;
 }
 
 
